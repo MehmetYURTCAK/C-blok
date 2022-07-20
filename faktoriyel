@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+int n;
+printf("lutfen faktoriyelini bulmak istediginiz sayiyi giriniz ");
+scanf("%d",&n);
+int i =1;
+while(n!=0){
+	i=i*n;
+	n--;
+}
+printf("%d",i);	
+}
