@@ -1,0 +1,36 @@
+# C-blok
+#include<stdio.h>
+int main()
+{
+	int islem;
+	int bakiye=10000;
+	int miktar;
+	int yatirilanpara;
+	int toplam;
+	printf("lutfen islem seciniz : \n");
+	printf("1.para cekme\n2.para yatirma\n");
+	scanf("%d",&islem);
+	switch(islem)
+	{
+		case 1 :
+			printf("bakiyeniz %d TL'dir \n",bakiye);
+			printf("cekmek istediginiz miktari giriniz \n",miktar);
+			scanf("%d",&miktar);
+			if(miktar>bakiye){
+				printf("yeterli paraniz bankamizda mevcut degildir.");
+			}
+			else
+			{
+				printf("lutfen paranizi almak icin bekleyiniz");
+				printf("kalan bakiyeniz : %dTL'dir",bakiye-miktar);
+			}
+			break;
+		case 2 :
+			printf("lutfen  yatirmak istediginiz parayi para yatirma unitesinden yatiriniz\n");
+			printf("yatirdiginiz para miktarini giriniz \n");
+			scanf("%d",&yatirilanpara);
+			printf("bankamizdaki toplam paraniz : %d TL'dir \n",yatirilanpara+bakiye);
+			break;
+	}
+
+}
