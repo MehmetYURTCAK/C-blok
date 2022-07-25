@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	printf("dikucgenin X eksenindeki uzunlugu ");
+	scanf("%d",&x);
+	printf("dikucgenin y eksenindeki uzunlugu ");
+	scanf("%d",&y);
+	int dikucgenin_alani=(x*y)/2;
+	printf("dikucgenin alani %d'dir ",dikucgenin_alani);
+}
