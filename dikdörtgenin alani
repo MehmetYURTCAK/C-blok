@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	printf("dikdörtgenin uzun kenarini giriniz ");
+	scanf("%d",&x);
+	printf("dikdörtgenin kisa kenarini giriniz ");
+	scanf("%d",&y);
+	int dikdortgenin_alani=x*y;
+	printf("dikdortgenin alani %d'dir ",dikdortgenin_alani);
+}
