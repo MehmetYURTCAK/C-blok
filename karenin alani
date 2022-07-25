@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int x;
+	printf("karenin kenarini giriniz ");
+	scanf("%d",&x);
+	int karenin_alani=x*x;
+	printf("karenin alani %d'dir ",karenin_alani);
+}
